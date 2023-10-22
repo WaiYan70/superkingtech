@@ -1,0 +1,170 @@
+.product{
+    @include flex(flex-start, flex-start);
+    
+    @include mobile{
+        flex-direction: column;
+    }
+
+    &__images{
+        // border: 1px solid black;
+        @include flex(flex-start, flex-start);
+        width: 60%;
+        flex-wrap: wrap;
+
+        @include tablet{
+            width: 80%;
+        }
+
+        @include mobile{
+            width: 100% ;
+        }
+
+        &__list{
+            // border: 1px solid black;
+            width: 20%;
+
+            &__item{
+                cursor: pointer;
+            }
+        }
+        &__main{
+            // border: 1px solid black;
+            flex-grow: 1;
+            padding-top: 80%;
+            position: relative;
+
+            img{
+                position: absolute;
+                top: 0%;
+                left: 50%;
+                height: 100%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    &__info{
+        // "width" attritube is to adjust the responsive
+        width: 40%;
+        // border: 1px solid black;
+        flex-grow: 1;
+        position: sticky;
+        top: $header-shrink-height;
+        padding-top: 2rem;
+
+        @include mobile{
+            width: 100%;
+            position: relative;
+            top: unset;
+        }
+        &__title{
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        &__item{
+            margin-top: 1rem;
+            &__price{
+                color: $main-color;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            &__title{
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            &__list{
+                @include flex(center, flex-start);
+
+                &__color{
+                    @include flex(center, center);
+                    width: 4rem;
+                    height: 4rem;
+                    margin-right: 1rem;
+                    border-radius: 50%;
+                    border: 2px solid $txt-second-color;
+                    cursor: pointer;
+                    @include mobile{
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                    &.active{
+                        border-color: $main-color;
+                    }
+                    &:hover{
+                        border-color: $main-color;
+                    }
+                    .circle{
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        border-radius: 50%;
+                        @include mobile{
+                            width: 2.5rem;
+                            height: 2.5rem;
+                        }
+                    }
+                }
+                &__highlight{
+                    @include flex(center, center);
+                    // width: 4rem;
+                    // height: 4rem;
+                    padding: 0.5rem;
+                    margin-right: 1rem;
+                    border: 1.5px solid $txt-second-color;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover{
+                        border-color: $main-color;
+                    }
+
+                    &__item{
+                        color: $txt-second-color;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.product-description{
+    // border: 1px solid black;
+    width: 100%;
+    padding: 2rem 0rem 3rem;
+    // height: 400px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+
+    @include mobile{
+        display: none;
+    }
+
+    &.mobile{
+        display: none;
+        @include mobile{
+            display: block;
+        }
+    }
+    &.expand{
+        height: max-content;
+    }
+    &__title{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 1rem 0rem;
+    }
+    &__content{
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        text-align: justify;
+    }
+    &__toggle{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

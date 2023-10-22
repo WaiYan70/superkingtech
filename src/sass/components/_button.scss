@@ -1,0 +1,41 @@
+.btn{
+    border: 0;
+    border-radius: 0.75rem;
+    outline: 0;
+    color: $btn-main-color;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    &__txt, &__icon{
+        display: block;
+        transition: transform 500ms ease;
+    }
+    &__txt{
+        padding: 0.75rem 2rem;
+    }
+    &__icon{
+        @include flex(center, center);
+        font-size: 2rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transform: translateX(-100%);
+    }
+    &-animate:hover &__txt{
+        transform: translateX(100%);
+    }
+    &-animate:hover &__icon{
+        transform: translateX(0%);
+    }
+    &-sm{
+        font-size: 1.25rem;
+    }
+    &-sm &__txt{
+        padding: 0.75rem 1.5rem;
+    }
+}

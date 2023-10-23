@@ -72,6 +72,8 @@ import monitor_sk_2408G_2 from "../sktmonitor/SK2408G-2.jpg";
 import keyboard_k100_1 from "../sktkeyboard/K100-1.jpg";
 import keyboard_k100_2 from "../sktkeyboard/K100-2.jpg";
 // import keyboard_k100_3 from "../sktkeyboard/K100-3.jpg";
+import keyboard_k100_1_small from "../sktkeyboard/K100-1-small.jpg";
+import keyboard_k100_2_small from "../sktkeyboard/K100-2-small.jpg";
 
 // Mouse 
 import mouse_m100_1 from "../sktmouse/M100-1.jpg";
@@ -103,6 +105,8 @@ const products = [
         price: 189000,
         image01: monitor_sk_1903VH_1,
         image02: monitor_sk_1903VH_2,
+        smallimage01: keyboard_k100_1_small,
+        smallimage02: keyboard_k100_2_small,
         categorySlug: "Monitor",
         colors: ["black"],
         highlight: ["HDMI cable", "Power Adaptor"],
@@ -114,6 +118,8 @@ const products = [
         price: 189000,
         image01: monitor_sk_2205N_1,
         image02: monitor_sk_2205N_2,
+        smallimage01: keyboard_k100_1_small,
+        smallimage02: keyboard_k100_2_small,
         categorySlug: "Monitor",
         colors: ["black"],
         highlight: ["HDMI cable", "Power Adaptor"],
@@ -125,6 +131,8 @@ const products = [
         price: 189000,
         image01: monitor_sk_2408G_1,
         image02: monitor_sk_2408G_2,
+        smallimage01: keyboard_k100_1_small,
+        smallimage02: keyboard_k100_2_small,
         categorySlug: "Monitor",
         colors: ["black"],
         highlight: ["HDMI cable", "Power Adaptor"],
@@ -137,6 +145,8 @@ const products = [
         price: 199000,
         image01: keyboard_k100_1,
         image02: keyboard_k100_2,
+        smallimage01: keyboard_k100_1_small,
+        smallimage02: keyboard_k100_2_small,
         categorySlug: "KeyBoard",
         colors: ["black"],
         highlight: ["Wired", "UniCode font"],
@@ -149,6 +159,8 @@ const products = [
         price: 209000,
         image01: mouse_m100_1,
         image02: mouse_m100_2,
+        smallimage01: keyboard_k100_1_small,
+        smallimage02: keyboard_k100_2_small,
         categorySlug: "Mouse",
         colors: ["black"],
         highlight: ["Wired"],
@@ -160,6 +172,8 @@ const products = [
         price: 209000,
         image01: mouse_m110_1,
         image02: mouse_m110_2,
+        smallimage01: keyboard_k100_1_small,
+        smallimage02: keyboard_k100_2_small,
         categorySlug: "Mouse",
         colors: ["black"],
         highlight: ["Wired"],
@@ -171,6 +185,8 @@ const products = [
         price: 209000,
         image01: mouse_jr7_1,
         image02: mouse_jr7_2,
+        smallimage01: keyboard_k100_1_small,
+        smallimage02: keyboard_k100_2_small,
         categorySlug: "Mouse",
         colors: ["black", "white", "pink", "blue"],
         highlight: ["Wireless", "Portable"],
@@ -182,6 +198,8 @@ const products = [
         price: 209000,
         image01: mouse_jr8_1,
         image02: mouse_jr8_2,
+        smallimage01: keyboard_k100_1_small,
+        smallimage02: keyboard_k100_2_small,
         categorySlug: "Mouse",
         colors: ["black", "white", "pink", "blue"],
         highlight: ["Wireless", "Portable"],
@@ -194,6 +212,8 @@ const products = [
         price: 219000,
         image01: keyboardmouse_km160_1,
         image02: keyboardmouse_km160_2,
+        smallimage01: keyboard_k100_1_small,
+        smallimage02: keyboard_k100_2_small,
         categorySlug: "KeyBoardMouse",
         colors: ["black", "white", "pink", "blue"],
         highlight: ["Wired", "UniCode font"],

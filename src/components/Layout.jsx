@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom/cjs/react-router-dom.min';
+import { HashRouter, Route } from 'react-router-dom/cjs/react-router-dom.min';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -7,7 +7,7 @@ import MainRoutes from '../routes/MainRoutes';
 
 const Layout = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Route render={props => (
         <div>
           <Header {...props}/>
@@ -19,7 +19,7 @@ const Layout = () => {
           <Footer />
         </div>
       )}/>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

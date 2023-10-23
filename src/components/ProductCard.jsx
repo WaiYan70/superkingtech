@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
@@ -7,12 +7,58 @@ import Button from './Button';
 import numberWithComma from '../assets/data/numberWithComma';
 
 const ProductCard = props => {
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+//   const handleImageLoad = () => {
+//     console.log(props.img01);
+//     setImageLoaded(true);
+//   }
+
+  useEffect(() => {
+    const fullImage = new Image();
+    fullImage.src = props.img01;
+    fullImage.src = props.img02; 
+    fullImage.onload = () => {
+        // console.log(props.img01);
+        setImageLoaded(true);
+    };
+    return () => {
+        fullImage.onload = null;
+    }
+  },[props.img01, props.img02]);
+    
   return (
     <div className="product-card">
         <Link to={`/catalog/${props.slug}`}>
             <div className="product-card__image">
-                <img src={props.img01} alt="" />
-                <img src={props.img02} alt="" />
+                {/* <img src={props.img01} alt="" loading="lazy"/>
+                <img src={props.img02} alt="" loading="lazy"/> */}
+                {imageLoaded ?
+                    (<img 
+                        src={props.img01} 
+                        alt="High Resolution"
+                    />) : 
+                    (<img 
+                        src={props.smimg01} 
+                        alt="Low Resolution" 
+                        // className={`blurred-image ${imageLoaded ? 'loaded' : 'loading'}`}
+                        // onLoad={handleImageLoad}
+                    />)
+                }
+                {imageLoaded ?
+                    (<img 
+                        src={props.img02} 
+                        alt="High Resolution"
+                    />) : 
+                    (<img 
+                        src={props.smimg02} 
+                        alt="Low Resolution" 
+                        // className={`blurred-image ${imageLoaded ? 'loaded' : 'loading'}`}
+                        // onLoad={handleImageLoad}
+                    />
+                    )
+                }
             </div>
             <h3 className="product-card__name">{props.name}</h3>
             <div className="product-card__price">
@@ -38,6 +84,8 @@ const ProductCard = props => {
 ProductCard.propTypes = {
     img01: PropTypes.string.isRequired,
     img02: PropTypes.string.isRequired,
+    smimg01: PropTypes.string.isRequired,
+    smimg02: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     slug: PropTypes.string.isRequired

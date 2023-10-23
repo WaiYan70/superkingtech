@@ -43,6 +43,8 @@ const Product = props => {
                   key={index}
                   img01={item.image01}
                   img02={item.image02}
+                  smimg01={item.smallimage01}
+                  smimg02={item.smallimage02}
                   name={item.title}
                   price={item.price}
                   slug={item.slug}

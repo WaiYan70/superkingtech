@@ -26,14 +26,14 @@ const ProductView = props => {
             <div className="product__images">
                 <div className="product__images__list">
                     <div className="product__images__list__item" onClick={() => setPreviewImg(product.image01)}>
-                        <img src={product.image01} alt="" />
+                        <img src={product.image01} alt="" loading="lazy"/>
                     </div>
                     <div className="product__images__list__item" onClick={() => setPreviewImg(product.image02)}>
-                        <img src={product.image02} alt="" />
+                        <img src={product.image02} alt="" loading="lazy"/>
                     </div>
                 </div>
                 <div className="product__images__main">
-                    <img src={previewImg} alt="" />
+                    <img src={previewImg} alt="" loading="lazy"/>
                 </div>
             </div>
             {/* Product's Info */}

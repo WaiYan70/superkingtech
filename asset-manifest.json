@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/superkingtech/static/css/main.cb1eb931.css",
-    "main.js": "/superkingtech/static/js/main.0341e35c.js",
+    "main.css": "/superkingtech/static/css/main.c750facf.css",
+    "main.js": "/superkingtech/static/js/main.87f51136.js",
     "static/js/787.42d7c0e5.chunk.js": "/superkingtech/static/js/787.42d7c0e5.chunk.js",
     "static/media/boxicons.svg": "/superkingtech/static/media/boxicons.045b05bf2dc119267a90.svg",
     "static/media/slide_3.png": "/superkingtech/static/media/slide_3.6e2ad4f2a2f8759c6360.png",
@@ -31,12 +31,12 @@
     "static/media/M100-1.jpg": "/superkingtech/static/media/M100-1.60cb8a9f863ccba8a80f.jpg",
     "static/media/Logo.png": "/superkingtech/static/media/Logo.3f227664b3ce56e8fcde.png",
     "index.html": "/superkingtech/index.html",
-    "main.cb1eb931.css.map": "/superkingtech/static/css/main.cb1eb931.css.map",
-    "main.0341e35c.js.map": "/superkingtech/static/js/main.0341e35c.js.map",
+    "main.c750facf.css.map": "/superkingtech/static/css/main.c750facf.css.map",
+    "main.87f51136.js.map": "/superkingtech/static/js/main.87f51136.js.map",
     "787.42d7c0e5.chunk.js.map": "/superkingtech/static/js/787.42d7c0e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb1eb931.css",
-    "static/js/main.0341e35c.js"
+    "static/css/main.c750facf.css",
+    "static/js/main.87f51136.js"
   ]
 }

@@ -58,44 +58,69 @@
 // Monitor
 import monitor_sk_1903VH_1 from "../sktmonitor/SK1903VH-1.jpg";
 import monitor_sk_1903VH_2 from "../sktmonitor/SK1903VH-2.jpg";
-// import monitor_sk_1903VH_3 from "../sktmonitor/SK1903VH-3.jpg";
+import monitor_sk_1903VH_3 from "../sktmonitor/SK1903VH-3.jpg";
+import monitor_sk_1903VH_1_small from "../sktmonitor/SK1903VH-1-small.jpg";
+import monitor_sk_1903VH_2_small from "../sktmonitor/SK1903VH-2-small.jpg";
+import monitor_sk_1903VH_3_small from "../sktmonitor/SK1903VH-3-small.jpg";
 
 import monitor_sk_2205N_1 from "../sktmonitor/SK2205N-1.jpg";
 import monitor_sk_2205N_2 from "../sktmonitor/SK2205N-2.jpg";
-// import monitor_sk_2205N_3 from "../sktmonitor/SK2205N-3.jpg";
+import monitor_sk_2205N_3 from "../sktmonitor/SK2205N-3.jpg";
+import monitor_sk_2205N_1_small from "../sktmonitor/SK2205N-1-small.jpg";
+import monitor_sk_2205N_2_small from "../sktmonitor/SK2205N-2-small.jpg";
+import monitor_sk_2205N_3_small from "../sktmonitor/SK2205N-3-small.jpg";
 
 import monitor_sk_2408G_1 from "../sktmonitor/SK2408G-1.jpg";
 import monitor_sk_2408G_2 from "../sktmonitor/SK2408G-2.jpg";
-// import monitor_sk_2408G_3 from "../sktmonitor/SK2408G-3.jpg";
+import monitor_sk_2408G_3 from "../sktmonitor/SK2408G-3.jpg";
+import monitor_sk_2408G_1_small from "../sktmonitor/SK2408G-1-small.jpg";
+import monitor_sk_2408G_2_small from "../sktmonitor/SK2408G-2-small.jpg";
+import monitor_sk_2408G_3_small from "../sktmonitor/SK2408G-3-small.jpg";
 
 // KeyBoard
-import keyboard_k100_1 from "../sktkeyboard/K100-1.jpg";
-import keyboard_k100_2 from "../sktkeyboard/K100-2.jpg";
-// import keyboard_k100_3 from "../sktkeyboard/K100-3.jpg";
-import keyboard_k100_1_small from "../sktkeyboard/K100-1-small.jpg";
-import keyboard_k100_2_small from "../sktkeyboard/K100-2-small.jpg";
+import keyboard_km100_1 from "../sktkeyboard/KM100-1.jpg";
+import keyboard_km100_2 from "../sktkeyboard/KM100-2.jpg";
+import keyboard_km100_3 from "../sktkeyboard/KM100-3.jpg";
+import keyboard_km100_1_small from "../sktkeyboard/KM100-1-small.jpg";
+import keyboard_km100_2_small from "../sktkeyboard/KM100-2-small.jpg";
+import keyboard_km100_3_small from "../sktkeyboard/KM100-3-small.jpg";
 
 // Mouse 
 import mouse_m100_1 from "../sktmouse/M100-1.jpg";
 import mouse_m100_2 from "../sktmouse/M100-2.jpg";
-// import mouse_m100_3 from "../sktmouse/M100-3.jpg";
+import mouse_m100_3 from "../sktmouse/M100-3.jpg";
+import mouse_m100_1_small from "../sktmouse/M100-1-small.jpg";
+import mouse_m100_2_small from "../sktmouse/M100-2-small.jpg";
+import mouse_m100_3_small from "../sktmouse/M100-3-small.jpg";
 
 import mouse_m110_1 from "../sktmouse/M110-1.jpg";
 import mouse_m110_2 from "../sktmouse/M110-2.jpg";
-// import mouse_m110_3 from "../sktmouse/M110-3.jpg";
+import mouse_m110_3 from "../sktmouse/M110-3.jpg";
+import mouse_m110_1_small from "../sktmouse/M110-1-small.jpg";
+import mouse_m110_2_small from "../sktmouse/M110-2-small.jpg";
+import mouse_m110_3_small from "../sktmouse/M110-3-small.jpg";
 
 import mouse_jr7_1 from "../sktmouse/JR7-1.jpg";
 import mouse_jr7_2 from "../sktmouse/JR7-2.jpg";
-// import mouse_jr7_3 from "../sktmouse/JR7-3.jpg";
+import mouse_jr7_3 from "../sktmouse/JR7-3.jpg";
+import mouse_jr7_1_small from "../sktmouse/JR7-1-small.jpg";
+import mouse_jr7_2_small from "../sktmouse/JR7-2-small.jpg";
+import mouse_jr7_3_small from "../sktmouse/JR7-3-small.jpg";
 
 import mouse_jr8_1 from "../sktmouse/JR8-1.jpg";
 import mouse_jr8_2 from "../sktmouse/JR8-2.jpg";
-// import mouse_jr8_3 from "../sktmouse/JR7-3.jpg";
+import mouse_jr8_3 from "../sktmouse/JR7-3.jpg";
+import mouse_jr8_1_small from "../sktmouse/JR8-1-small.jpg";
+import mouse_jr8_2_small from "../sktmouse/JR8-2-small.jpg";
+import mouse_jr8_3_small from "../sktmouse/JR8-3-small.jpg";
 
 // KeyBoard and Mouse
 import keyboardmouse_km160_1 from "../sktkeyboardmouse/KM160-1.jpg";
 import keyboardmouse_km160_2 from "../sktkeyboardmouse/KM160-2.jpg";
-// import keyboardmouse_km160_3 from "../sktkeyboardmouse/KM160-3.jpg";
+import keyboardmouse_km160_3 from "../sktkeyboardmouse/KM160-3.jpg";
+import keyboardmouse_km160_1_small from "../sktkeyboardmouse/KM160-1-small.jpg";
+import keyboardmouse_km160_2_small from "../sktkeyboardmouse/KM160-2-small.jpg";
+import keyboardmouse_km160_3_small from "../sktkeyboardmouse/KM160-3-small.jpg";
 
 // Data
 const products = [
@@ -105,8 +130,11 @@ const products = [
         price: 189000,
         image01: monitor_sk_1903VH_1,
         image02: monitor_sk_1903VH_2,
-        smallimage01: keyboard_k100_1_small,
-        smallimage02: keyboard_k100_2_small,
+        image03: monitor_sk_1903VH_3,
+        smallimage01: monitor_sk_1903VH_1_small,
+        smallimage02: monitor_sk_1903VH_2_small,
+        smallimage03: monitor_sk_1903VH_3_small,
+        imagealt: "SKT SK 1903VH Monitor",
         categorySlug: "Monitor",
         colors: ["black"],
         highlight: ["HDMI cable", "Power Adaptor"],
@@ -118,8 +146,11 @@ const products = [
         price: 189000,
         image01: monitor_sk_2205N_1,
         image02: monitor_sk_2205N_2,
-        smallimage01: keyboard_k100_1_small,
-        smallimage02: keyboard_k100_2_small,
+        image03: monitor_sk_2205N_3,
+        smallimage01: monitor_sk_2205N_1_small,
+        smallimage02: monitor_sk_2205N_2_small,
+        smallimage03: monitor_sk_2205N_3_small,
+        imagealt: "SKT SK 2205N Monitor",
         categorySlug: "Monitor",
         colors: ["black"],
         highlight: ["HDMI cable", "Power Adaptor"],
@@ -131,8 +162,11 @@ const products = [
         price: 189000,
         image01: monitor_sk_2408G_1,
         image02: monitor_sk_2408G_2,
-        smallimage01: keyboard_k100_1_small,
-        smallimage02: keyboard_k100_2_small,
+        image03: monitor_sk_2408G_3,
+        smallimage01: monitor_sk_2408G_1_small,
+        smallimage02: monitor_sk_2408G_2_small,
+        smallimage03: monitor_sk_2408G_3_small,
+        imagealt: "SKT SK 2408G Monitor",
         categorySlug: "Monitor",
         colors: ["black"],
         highlight: ["HDMI cable", "Power Adaptor"],
@@ -141,12 +175,15 @@ const products = [
     },
     // KeyBoard
     {
-        title: "K 100",
+        title: "KM 100",
         price: 199000,
-        image01: keyboard_k100_1,
-        image02: keyboard_k100_2,
-        smallimage01: keyboard_k100_1_small,
-        smallimage02: keyboard_k100_2_small,
+        image01: keyboard_km100_1,
+        image02: keyboard_km100_2,
+        image03: keyboard_km100_3,
+        smallimage01: keyboard_km100_1_small,
+        smallimage02: keyboard_km100_2_small,
+        smallimage03: keyboard_km100_3_small,
+        imagealt: "SKT KM 100 Keyboard",
         categorySlug: "KeyBoard",
         colors: ["black"],
         highlight: ["Wired", "UniCode font"],
@@ -159,8 +196,11 @@ const products = [
         price: 209000,
         image01: mouse_m100_1,
         image02: mouse_m100_2,
-        smallimage01: keyboard_k100_1_small,
-        smallimage02: keyboard_k100_2_small,
+        image03: mouse_m100_3,
+        smallimage01: mouse_m100_1_small,
+        smallimage02: mouse_m100_2_small,
+        smallimage03: mouse_m100_3_small,
+        imagealt: "SKT M100 Mouse",
         categorySlug: "Mouse",
         colors: ["black"],
         highlight: ["Wired"],
@@ -172,12 +212,15 @@ const products = [
         price: 209000,
         image01: mouse_m110_1,
         image02: mouse_m110_2,
-        smallimage01: keyboard_k100_1_small,
-        smallimage02: keyboard_k100_2_small,
+        image03: mouse_m110_3,
+        smallimage01: mouse_m110_1_small,
+        smallimage02: mouse_m110_2_small,
+        smallimage03: mouse_m110_3_small,
+        imagealt: "SKT M110 Mouse",
         categorySlug: "Mouse",
         colors: ["black"],
         highlight: ["Wired"],
-        slug: "Mouse-M100",
+        slug: "Mouse-M110",
         description: "Mouse M100 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore dignissimos quisquam fugit in labore nam repellat veniam vero quia!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore dignissimos quisquam fugit in labore nam repellat veniam vero quia!"
     },
     {
@@ -185,8 +228,11 @@ const products = [
         price: 209000,
         image01: mouse_jr7_1,
         image02: mouse_jr7_2,
-        smallimage01: keyboard_k100_1_small,
-        smallimage02: keyboard_k100_2_small,
+        image03: mouse_jr7_3,
+        smallimage01: mouse_jr7_1_small,
+        smallimage02: mouse_jr7_2_small,
+        smallimage03: mouse_jr7_3_small,
+        imagealt: "SKT JR7 Mouse",
         categorySlug: "Mouse",
         colors: ["black", "white", "pink", "blue"],
         highlight: ["Wireless", "Portable"],
@@ -198,8 +244,11 @@ const products = [
         price: 209000,
         image01: mouse_jr8_1,
         image02: mouse_jr8_2,
-        smallimage01: keyboard_k100_1_small,
-        smallimage02: keyboard_k100_2_small,
+        image03: mouse_jr8_3,
+        smallimage01: mouse_jr8_1_small,
+        smallimage02: mouse_jr8_2_small,
+        smallimage03: mouse_jr8_3_small,
+        imagealt: "SKT JR8 Mouse",
         categorySlug: "Mouse",
         colors: ["black", "white", "pink", "blue"],
         highlight: ["Wireless", "Portable"],
@@ -212,8 +261,11 @@ const products = [
         price: 219000,
         image01: keyboardmouse_km160_1,
         image02: keyboardmouse_km160_2,
-        smallimage01: keyboard_k100_1_small,
-        smallimage02: keyboard_k100_2_small,
+        image03: keyboardmouse_km160_3,
+        smallimage01: keyboardmouse_km160_1_small,
+        smallimage02: keyboardmouse_km160_2_small,
+        smallimage03: keyboardmouse_km160_3_small,
+        imagealt: "SKT KM160 KeyBoard Mouse",
         categorySlug: "KeyBoardMouse",
         colors: ["black", "white", "pink", "blue"],
         highlight: ["Wired", "UniCode font"],

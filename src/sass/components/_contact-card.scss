@@ -1,0 +1,36 @@
+.contact-card {
+    @include flex(center, center);
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0rem 12rem;
+    box-shadow: $box-shadow;
+    transition: transform 0.5s ease;
+
+    &:hover {
+        transform: translateY(-2rem);
+    }
+
+    &__icon {
+        @include flex(center, center);
+        width: 40%;
+        color: $main-color-red;
+        // border: 1px solid black;
+        i {
+            font-size: 3rem;
+        }
+    }
+
+    &__info {
+        text-align: center;
+        &__name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        &__description {
+            font-size: 1rem;
+            color: $txt-second-color;
+        }
+    }
+}

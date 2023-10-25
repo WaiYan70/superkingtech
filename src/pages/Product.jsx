@@ -45,6 +45,7 @@ const Product = props => {
                   img02={item.image02}
                   smimg01={item.smallimage01}
                   smimg02={item.smallimage02}
+                  imgalt={item.imagealt}
                   name={item.title}
                   price={item.price}
                   slug={item.slug}

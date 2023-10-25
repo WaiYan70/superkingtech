@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 import Home from '../pages/Home';
 import Catalog from '../pages/Catalog';
-import Cart from '../pages/Cart';
+import Contact from '../pages/Contact';
 import Product from '../pages/Product';
 
 
@@ -13,7 +13,7 @@ const MainRoutes = () => {
       <Route path="/" exact component={Home} />
       <Route path="/catalog/:slug" component={Product}/>
       <Route path="/catalog" component={Catalog}/>
-      <Route path="/cart" component={Cart}/>
+      <Route path="/contact" component={Contact}/>
     </Switch>
   )
 }

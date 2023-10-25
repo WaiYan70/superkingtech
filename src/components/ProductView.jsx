@@ -7,7 +7,7 @@ import numberWithComma from '../assets/data/numberWithComma';
 
 const ProductView = props => {
 
-    let product = props.product
+    let product = props.product;
 
     const [previewImg, setPreviewImg] = useState(product.image01);
 
@@ -15,25 +15,95 @@ const ProductView = props => {
 
     const [color, setColor] = useState(undefined);
 
+    const [imageLoaded, setImageLoaded]= useState(false);
+
+    // const handleImageLoad = () => {
+    //     setImageLoaded(true);
+    // }
+
     useEffect(() => {
         setPreviewImg(product.image01);
         setColor(undefined);
     },[product]);
+
+    useEffect(() => {
+        const actualImage = new Image();
+        actualImage.src = product.image01;
+        actualImage.src = product.image02; 
+        actualImage.src = product.image03; 
+        actualImage.onload = () => {
+            setImageLoaded(true);
+        };
+    },[product])
 
     return (
         <div className="product">
              {/* Product's Images */}
             <div className="product__images">
                 <div className="product__images__list">
-                    <div className="product__images__list__item" onClick={() => setPreviewImg(product.image01)}>
+                    {/* <div className="product__images__list__item" onClick={() => setPreviewImg(product.image01)}>
                         <img src={product.image01} alt="" loading="lazy"/>
                     </div>
                     <div className="product__images__list__item" onClick={() => setPreviewImg(product.image02)}>
                         <img src={product.image02} alt="" loading="lazy"/>
                     </div>
+                    <div className="product__images__list__item" onClick={() => setPreviewImg(product.image01)}>
+                        <img src={product.image03} alt="" loading="lazy"/>
+                    </div> */}
+                    <div className="product__images__list__item" onClick={() => setPreviewImg(product.image01)}>
+                        {imageLoaded ?
+                            (<img 
+                                src={product.image01} 
+                                alt={product.imagealt}
+                            />) : 
+                            (<img 
+                                src={product.smallimage01} 
+                                alt={product.imagealt}
+                                // onLoad={handleImageLoad}
+                            />)
+                         }
+                    </div>
+                    <div className="product__images__list__item" onClick={() => setPreviewImg(product.image02)}>
+                        {imageLoaded ?
+                            (<img 
+                                src={product.image02} 
+                                alt={product.imagealt}
+                            />) : 
+                            (<img 
+                                src={product.smallimage02} 
+                                alt={product.imagealt}
+                                // onLoad={handleImageLoad}
+                            />)
+                         }
+                    </div>
+                    <div className="product__images__list__item" onClick={() => setPreviewImg(product.image03)}>
+                        {imageLoaded ?
+                            (<img 
+                                src={product.image03} 
+                                alt={product.imagealt}
+                            />) : 
+                            (<img 
+                                src={product.smallimage03} 
+                                alt={product.imagealt} 
+                                // onLoad={handleImageLoad}
+                            />)
+                         }
+                    </div>
                 </div>
                 <div className="product__images__main">
-                    <img src={previewImg} alt="" loading="lazy"/>
+                    {/* <img src={previewImg} alt="" loading="lazy"/> */}
+                    {imageLoaded ?
+                        (<img 
+                            src={previewImg} 
+                            alt={product.imagealt}
+                            // fetchpriority="high"
+                        />) : 
+                        (<img 
+                            src={product.smallimage01} 
+                            alt={product.imagealt}
+                            // onLoad={handleImageLoad}
+                        />)
+                     }
                 </div>
             </div>
             {/* Product's Info */}
@@ -131,7 +201,7 @@ const ProductView = props => {
 }
 
 ProductView.propTypes = {
-    product: PropTypes.object
+    product: PropTypes.object.isRequired
 }
 
 export default ProductView;

@@ -12,11 +12,6 @@ const mainNav = [
     display: "Catalog",
     path: "/catalog"
   },
-  // Accessories and Contact is just sample data
-  {
-    display: "Accessories",
-    path: "/accessories"
-  },
   {
     display: "Contact",
     path: "/contact"

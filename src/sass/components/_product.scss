@@ -20,17 +20,21 @@
         }
 
         &__list{
-            // border: 1px solid black;
             width: 20%;
 
             &__item{
                 cursor: pointer;
+                img{
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden;
+                }
             }
         }
         &__main{
             // border: 1px solid black;
             flex-grow: 1;
-            padding-top: 80%;
+            padding-top: 75%;
             position: relative;
 
             img{

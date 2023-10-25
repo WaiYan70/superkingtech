@@ -11,6 +11,7 @@ const heroSliderData = [
         title: "Monitor",
         description: "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptate quidem. Hic, quaerat. Qui molestiae voluptates tempore praesentium perferendis animi!",
         img: img1,
+        imgalt: "SKT",
         color: "blue",
         path: "/catalog"
     },
@@ -18,6 +19,7 @@ const heroSliderData = [
         title: "Key Board",
         description: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptate quidem. Hic, quaerat. Qui molestiae voluptates tempore praesentium perferendis animi!",
         img: img2,
+        imgalt: "SKT",
         color: "pink",
         path: "/catalog"
     },
@@ -25,6 +27,7 @@ const heroSliderData = [
         title: "Mouse",
         description: "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptate quidem. Hic, quaerat. Qui molestiae voluptates tempore praesentium perferendis animi!",
         img: img3,
+        imgalt: "SKT",
         color: "orange",
         path: "/catalog"
     }

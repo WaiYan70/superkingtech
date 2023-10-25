@@ -11,21 +11,16 @@ const ProductCard = props => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
 //   const handleImageLoad = () => {
-//     console.log(props.img01);
 //     setImageLoaded(true);
-//   }
+//     }   
 
   useEffect(() => {
     const fullImage = new Image();
     fullImage.src = props.img01;
     fullImage.src = props.img02; 
     fullImage.onload = () => {
-        // console.log(props.img01);
         setImageLoaded(true);
     };
-    return () => {
-        fullImage.onload = null;
-    }
   },[props.img01, props.img02]);
     
   return (
@@ -37,24 +32,22 @@ const ProductCard = props => {
                 {imageLoaded ?
                     (<img 
                         src={props.img01} 
-                        alt="High Resolution"
+                        alt={props.imgalt}
                     />) : 
                     (<img 
                         src={props.smimg01} 
-                        alt="Low Resolution" 
-                        // className={`blurred-image ${imageLoaded ? 'loaded' : 'loading'}`}
+                        alt={props.imgalt}
                         // onLoad={handleImageLoad}
                     />)
                 }
                 {imageLoaded ?
                     (<img 
                         src={props.img02} 
-                        alt="High Resolution"
+                        alt={props.imgalt}
                     />) : 
                     (<img 
                         src={props.smimg02} 
-                        alt="Low Resolution" 
-                        // className={`blurred-image ${imageLoaded ? 'loaded' : 'loading'}`}
+                        alt={props.imgalt}
                         // onLoad={handleImageLoad}
                     />
                     )
@@ -69,13 +62,15 @@ const ProductCard = props => {
             </div>
         </Link> 
         <div className="product-card__btn">
-            <Button
-                size="sm"
-                icon="bx bx-cart"
-                animate={true}
-            >
-                Buy It Now
-            </Button>
+            <Link to={`/catalog/${props.slug}`}> 
+                <Button
+                    size="sm"
+                    icon="bx bx-cart"
+                    animate={true}
+                >
+                    Buy It Now
+                </Button>
+            </Link>
         </div>
     </div>
   )
@@ -86,6 +81,7 @@ ProductCard.propTypes = {
     img02: PropTypes.string.isRequired,
     smimg01: PropTypes.string.isRequired,
     smimg02: PropTypes.string.isRequired,
+    imgalt: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     slug: PropTypes.string.isRequired

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/superkingtech/static/css/main.c750facf.css",
-    "main.js": "/superkingtech/static/js/main.87f51136.js",
+    "main.css": "/superkingtech/static/css/main.b6f73791.css",
+    "main.js": "/superkingtech/static/js/main.48e68fef.js",
     "static/js/787.42d7c0e5.chunk.js": "/superkingtech/static/js/787.42d7c0e5.chunk.js",
     "static/media/boxicons.svg": "/superkingtech/static/media/boxicons.045b05bf2dc119267a90.svg",
     "static/media/slide_3.png": "/superkingtech/static/media/slide_3.6e2ad4f2a2f8759c6360.png",
@@ -11,16 +11,21 @@
     "static/media/boxicons.woff": "/superkingtech/static/media/boxicons.0f4528cf3c75a4b361c0.woff",
     "static/media/boxicons.ttf": "/superkingtech/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
     "static/media/SK1903VH-2.jpg": "/superkingtech/static/media/SK1903VH-2.6c797e955e9b76d51443.jpg",
+    "static/media/KM160-3.jpg": "/superkingtech/static/media/KM160-3.8748e893696b6f5886bf.jpg",
+    "static/media/SK1903VH-3.jpg": "/superkingtech/static/media/SK1903VH-3.089270551ba01ff32289.jpg",
     "static/media/SK2205N-2.jpg": "/superkingtech/static/media/SK2205N-2.26747188cba7c7d49303.jpg",
     "static/media/SK2408G-2.jpg": "/superkingtech/static/media/SK2408G-2.589e0827336bd4b77117.jpg",
+    "static/media/KM100-3.jpg": "/superkingtech/static/media/KM100-3.cde4482c17deb8589ef6.jpg",
     "static/media/KM160-1.jpg": "/superkingtech/static/media/KM160-1.4c04f47c89a34295eb6f.jpg",
     "static/media/boxicons.woff2": "/superkingtech/static/media/boxicons.8d765747a5588f36ff61.woff2",
     "static/media/JR7-2.jpg": "/superkingtech/static/media/JR7-2.30ef76cb9a8025e04d46.jpg",
     "static/media/M110-1.jpg": "/superkingtech/static/media/M110-1.5172e5c0f7d3beefeaa9.jpg",
-    "static/media/K100-1.jpg": "/superkingtech/static/media/K100-1.111db78f034ad9902ecc.jpg",
+    "static/media/KM100-1.jpg": "/superkingtech/static/media/KM100-1.111db78f034ad9902ecc.jpg",
     "static/media/JR7-1.jpg": "/superkingtech/static/media/JR7-1.51d1795766ff4e42a904.jpg",
     "static/media/KM160-2.jpg": "/superkingtech/static/media/KM160-2.a0b003d1f411604e863a.jpg",
-    "static/media/K100-2.jpg": "/superkingtech/static/media/K100-2.769dcda65b0062b82c8c.jpg",
+    "static/media/SK2408G-3.jpg": "/superkingtech/static/media/SK2408G-3.68df19228ab95e3ff37e.jpg",
+    "static/media/SK2205N-3.jpg": "/superkingtech/static/media/SK2205N-3.a143a4859fd7182f52cc.jpg",
+    "static/media/KM100-2.jpg": "/superkingtech/static/media/KM100-2.769dcda65b0062b82c8c.jpg",
     "static/media/JR8-2.jpg": "/superkingtech/static/media/JR8-2.1b0d3c6d91dbddc03f89.jpg",
     "static/media/SK1903VH-1.jpg": "/superkingtech/static/media/SK1903VH-1.8c2da3d7f852ee12a7f1.jpg",
     "static/media/SK2408G-1.jpg": "/superkingtech/static/media/SK2408G-1.22af4be80bb670d8b261.jpg",
@@ -28,15 +33,18 @@
     "static/media/SK2205N-1.jpg": "/superkingtech/static/media/SK2205N-1.5ceaeec3f8d806e35752.jpg",
     "static/media/M110-2.jpg": "/superkingtech/static/media/M110-2.3fe1f5707d91d7cfc3fc.jpg",
     "static/media/M100-2.jpg": "/superkingtech/static/media/M100-2.1787b9857e815ef5fba8.jpg",
+    "static/media/JR7-3.jpg": "/superkingtech/static/media/JR7-3.7636ec6616b09c140ddd.jpg",
     "static/media/M100-1.jpg": "/superkingtech/static/media/M100-1.60cb8a9f863ccba8a80f.jpg",
+    "static/media/M100-3.jpg": "/superkingtech/static/media/M100-3.5441aefed21c03dd68cb.jpg",
+    "static/media/M110-3.jpg": "/superkingtech/static/media/M110-3.5a428cd1f13e2f7cb532.jpg",
     "static/media/Logo.png": "/superkingtech/static/media/Logo.3f227664b3ce56e8fcde.png",
     "index.html": "/superkingtech/index.html",
-    "main.c750facf.css.map": "/superkingtech/static/css/main.c750facf.css.map",
-    "main.87f51136.js.map": "/superkingtech/static/js/main.87f51136.js.map",
+    "main.b6f73791.css.map": "/superkingtech/static/css/main.b6f73791.css.map",
+    "main.48e68fef.js.map": "/superkingtech/static/js/main.48e68fef.js.map",
     "787.42d7c0e5.chunk.js.map": "/superkingtech/static/js/787.42d7c0e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c750facf.css",
-    "static/js/main.87f51136.js"
+    "static/css/main.b6f73791.css",
+    "static/js/main.48e68fef.js"
   ]
 }

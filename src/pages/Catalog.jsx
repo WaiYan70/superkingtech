@@ -2,8 +2,6 @@ import React, { useCallback, useEffect, useState, useRef } from 'react';
 
 // Importing Components
 import Helmet from '../components/Helmet';
-// import Grid from '../components/Grid';
-// import ProductCard from '../components/ProductCard';
 import CheckBox from '../components/CheckBox';
 import Button from '../components/Button';
 import InfinityList from '../components/InfinityList';

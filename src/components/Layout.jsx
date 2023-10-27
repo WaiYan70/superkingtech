@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route } from 'react-router-dom/cjs/react-router-dom.min';
+import { HashRouter, Route } from 'react-router-dom/cjs/react-router-dom.min'
 
 import Header from './Header';
 import Footer from './Footer';
@@ -20,6 +20,21 @@ const Layout = () => {
         </div>
       )}/>
     </HashRouter>
+
+    // <HashRouter>
+    //   <div>
+    //     <Header />
+    //       <div className="container">
+    //         <div className="main">
+    //           <Routes>
+    //             <Route path='/' element={<MainRoutes />} />
+    //           </Routes>
+    //         </div>
+    //       </div>
+    //     <Footer />
+    //   </div>
+    // </HashRouter>
+
   )
 }
 

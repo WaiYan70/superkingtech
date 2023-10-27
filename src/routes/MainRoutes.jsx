@@ -1,11 +1,10 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import { Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
 
 import Home from '../pages/Home';
 import Catalog from '../pages/Catalog';
 import Contact from '../pages/Contact';
 import Product from '../pages/Product';
-
 
 const MainRoutes = () => {
   return (
@@ -15,7 +14,7 @@ const MainRoutes = () => {
       <Route path="/catalog" component={Catalog}/>
       <Route path="/contact" component={Contact}/>
     </Switch>
-  )
-}
+  );
+};
 
 export default MainRoutes;

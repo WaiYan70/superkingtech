@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 
-import logo from '../assets/Logo.png';
+import logo from '../assets/logo/Logo.png';
 
 const mainNav = [
   {
@@ -77,16 +77,21 @@ const Header = () => {
           </div>
           <div className="header__menu__right">
             <div className="header__menu__item header__menu__right__item">
+              <div className="header__menu__right__item__div">HotLine</div> 
+              <div>+959421039311</div>
+            </div>
+            {/* <div className="header__menu__item header__menu__right__item">
+              +959421039311
+            </div> */}
+            {/* <div className="header__menu__item header__menu__right__item">
               <i className='bx bx-search'></i>
             </div>
             <div className="header__menu__item header__menu__right__item">
-              <Link to="/cart">
                 <i className='bx bx-shopping-bag'></i>
-              </Link>
             </div>
             <div className="header__menu__item header__menu__right__item">
               <i className='bx bx-user'></i>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

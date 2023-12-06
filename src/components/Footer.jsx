@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 import Grid from './Grid';
-import logo from '../assets/Logo.png';
+import logo from '../assets/logo/Logo.png';
 
 const footerAboutLinks = [
   {

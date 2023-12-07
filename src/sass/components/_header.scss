@@ -82,9 +82,13 @@
             &__item{
                 // border: 1px solid red;
                 // border-radius: 15px;
-                padding: 0.5rem 1rem;
-                &__div{
-                    margin-right: 1rem
+                // padding: 0.5rem 1rem;
+                &__phone{
+                    font-size: 2rem;
+                    margin-right: 1.25rem
+                }
+                &__number{
+                    letter-spacing: 0.3rem
                 }
                 @include flex(center, center);
 

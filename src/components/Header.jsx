@@ -77,8 +77,10 @@ const Header = () => {
           </div>
           <div className="header__menu__right">
             <div className="header__menu__item header__menu__right__item">
-              <div className="header__menu__right__item__div">HotLine</div> 
-              <div>+959421039311</div>
+              <div className="header__menu__right__item__phone">
+                <i class='bx bxs-phone-call'></i>
+              </div> 
+              <div className="header__menu__right__item__number">+959421039311</div>
             </div>
             {/* <div className="header__menu__item header__menu__right__item">
               +959421039311

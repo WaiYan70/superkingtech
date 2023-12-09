@@ -3,6 +3,7 @@ import React from 'react';
 // Importing Each Component
 import Helmet from '../components/Helmet';
 import Section, {SectionTitle, SectionBody} from '../components/Section';
+import Grid from '../components/Grid';
 
 const Home = () => {
   return (
@@ -13,6 +14,12 @@ const Home = () => {
           Contact Us
         </SectionTitle>
         <SectionBody>
+          <Grid
+            col={2}
+            mdCol={1}
+            smCol={1}
+            gap={20}
+          >
             {/* {
               contact.map((item, index) => <ContactCard
                 key={index}
@@ -86,6 +93,7 @@ const Home = () => {
                   </div>
               </div>
             </div>
+          </Grid>
         </SectionBody>
       </Section>
       {/* The End of Contact Card Section */}

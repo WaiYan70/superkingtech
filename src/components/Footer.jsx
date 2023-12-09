@@ -4,38 +4,31 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import Grid from './Grid';
 import logo from '../assets/logo/Logo.png';
 
-const footerAboutLinks = [
+const footerStoreLinks = [
   {
-    display: "About-1",
-    path: "/about"
+    display: "Home",
+    path: "/"
   },
   {
-    display: "About-2",
-    path: "/about"
+    display: "Products",
+    path: "/catalog"
   },
   {
-    display: "About-3",
-    path: "/about"
-  },
-  {
-    display: "About-4",
-    path: "/about"
+    display: "Contact",
+    path: "/contact"
   }
 ]
 
-const footerCustomerLinks = [
+const phoneLinks = [
   {
-    display: "About-5",
-    path: "/about"
+    phonenumber: "+959-882 883 901",
   },
   {
-    display: "About-6",
-    path: "/about"
+    phonenumber: "+959-882 883 902",
   },
   {
-    display: "About-7",
-    path: "/about"
-  }
+    phonenumber: "+959-882 883 903",
+  },
 ]
 
 const Footer = () => {
@@ -51,46 +44,42 @@ const Footer = () => {
           {/* Footer Phone Number */}
           <div>
             <div className="footer__title">
-              Phone Number
+              Phone Numbers
             </div>
             <div className="footer__content">
-              <p>
-                Phone Number - 1 <strong>0123456789</strong>
-              </p>
-              <p>
-                Phone Number - 2 <strong>0123456789</strong>
-              </p>
-              <p>
-                Phone Number - 3 <strong>0123456789</strong>
-              </p>
+              <div className="footer__content__phonenumber">
+                {/* <i class='bx bxs-phone-call'></i> */}
+                {
+                  phoneLinks.map((item,index)=>(
+                  // <i class='bx bxs-phone-call'></i>
+                    <a href={`tel:${item.phonenumber}`} key={index}>
+                      <i class='bx bxs-phone-call'></i>
+                      <span>{item.phonenumber}</span>
+                    </a>
+                  ))
+                }
+              </div>
             </div>
           </div>
           {/* Footer About Link */}
           <div>
             <div className="footer__title">
-              Footer - About - Link
+              Location
             </div>
             <div className="footer__content">
-              {
-                footerAboutLinks.map((item, index) => (
-                  <p key={index}>
-                    <Link to={item.path}>
-                      {item.display}
-                    </Link>
-                  </p>
-                ))
-              }
+              <p lang="my" className="footer__content__location">အမှတ်(၁၃၈)၊ မြေညီထပ်၊ ဆိပ်ကမ်းသာလမ်းအောက်၊ ကျောက်တံတားမြို့နယ်၊ ရန်ကုန်မြို့။</p>
+              <p className="footer__content__location">No. 138, Seik Kan Tha Street, Kyauk Ta Da TownShip, Yangon.</p>
             </div>
           </div>
           {/* Footer Customer Link */}
           <div>
             <div className="footer__title">
-              Footer - Customer - Link
+              About Store
             </div>
             <div className="footer__content">
               {
-                footerCustomerLinks.map((item, index) => (
-                  <p key={index}>
+                footerStoreLinks.map((item, index) => (
+                  <p className="footer__content__header" key={index}>
                     <Link to={item.path}>
                       {item.display}
                     </Link>
@@ -109,10 +98,21 @@ const Footer = () => {
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laboriosam voluptates, officiis quasi sequi sunt sit reiciendis neque deserunt tenetur vitae nam voluptatum accusantium sint. Ducimus voluptatem quam a consequatur!
             </p>
+            <div className="footer__about__social">
+              <div className="footer__about__social__item">
+                <a href="https://www.facebook.com/quickmart2022?mibextid=ZbWKwL"><i class='bx bxl-facebook-circle'></i></a>
+                <span>Facebook SKT</span>
+              </div>
+              <div className="footer__about__social__item">
+                <i class='bx bxs-envelope'></i>
+                <span>quickmart28@gmail.com</span>
+              </div>
+            </div>
           </div>
 
         </Grid>
       </div>
+      <div><center><i class='bx bx-copyright'></i><strong> 2023 SKT</strong></center></div>
     </footer>
   )
 }

@@ -100,11 +100,13 @@ const Footer = () => {
             </p>
             <div className="footer__about__social">
               <div className="footer__about__social__item">
-                <a href="https://www.facebook.com/quickmart2022?mibextid=ZbWKwL"><i class='bx bxl-facebook-circle'></i></a>
-                <span>Facebook SKT</span>
+                <a href="https://www.facebook.com/quickmart2022?mibextid=ZbWKwL">
+                  <i class='bx bxl-facebook-circle'></i>
+                  <span>Facebook SKT</span>
+                </a>
               </div>
               <div className="footer__about__social__item">
-                <i class='bx bxs-envelope'></i>
+                <i class='bx bx-envelope'></i>
                 <span>quickmart28@gmail.com</span>
               </div>
             </div>

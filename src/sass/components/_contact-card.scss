@@ -1,8 +1,8 @@
 .contact-card {
     @include flex(center, center);
     flex-direction: column;
-    padding: 2rem;
-    margin: 0rem 12rem;
+    padding: 2rem 0rem;
+    margin: 4rem 0rem;
     box-shadow: $box-shadow;
     transition: transform 0.5s ease;
 
@@ -13,7 +13,7 @@
     &__icon {
         @include flex(center, center);
         width: 40%;
-        color: $main-color-red;
+        // color: $main-color-red;
         // border: 1px solid black;
         i {
             font-size: 3rem;
@@ -25,11 +25,12 @@
         &__name {
             font-size: 1.25rem;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
         }
 
         &__description {
             font-size: 1rem;
+            margin-bottom: 1rem;
             color: $txt-second-color;
         }
     }

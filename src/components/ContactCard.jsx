@@ -12,7 +12,10 @@ const ContactCard = props => {
                 {props.name}
             </div>
             <div className="contact-card__info__description">
-                {props.description}
+              အမှတ်(၁၃၈)၊ မြေညီထပ်၊ ဆိပ်ကမ်းသာလမ်းအောက်၊ ကျောက်တံတားမြို့နယ်၊ ရန်ကုန်မြို့။
+            </div>
+            <div className="contact-card__info__description">
+              No. 138, Seik Kan Tha Street, Kyauk Ta Da TownShip, Yangon.
             </div>
         </div>
     </div>

@@ -9,13 +9,9 @@ const mainNav = [
     path: "/"
   },
   {
-    display: "Catalog",
+    display: "Products",
     path: "/catalog"
   },
-  {
-    display: "Contact",
-    path: "/contact"
-  }
 ]
 
 const Header = () => {
@@ -76,21 +72,20 @@ const Header = () => {
             }
           </div>
           <div className="header__menu__right">
-            <div className="header__menu__item header__menu__right__item">
+            {/* <div className="header__menu__item header__menu__right__item">
               <div className="header__menu__right__item__phone">
                 <i class='bx bxs-phone-call'></i>
               </div> 
               <div className="header__menu__right__item__number">
                 <a href="tel:+959421039311">959421039311</a>
               </div>
-            </div>
-            {/* <div className="header__menu__item header__menu__right__item">
-              +959421039311
             </div> */}
-            {/* <div className="header__menu__item header__menu__right__item">
-              <i className='bx bx-search'></i>
-            </div>
             <div className="header__menu__item header__menu__right__item">
+              <Link to="/contact">
+                <span>Contact Us</span>
+              </Link>
+            </div>
+            {/* <div className="header__menu__item header__menu__right__item">
                 <i className='bx bx-shopping-bag'></i>
             </div>
             <div className="header__menu__item header__menu__right__item">

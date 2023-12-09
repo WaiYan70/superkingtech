@@ -1,23 +1,23 @@
 const contact = [
     {
-        name: "Contact About Address",
-        description: "1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam alias ad cumque exercitationem.",
-        icon: "bx bx-shopping-bag"
+        name: "Our Address",
+        description: "အမှတ်(၁၃၈)၊ မြေညီထပ်၊ ဆိပ်ကမ်းသာလမ်းအောက်၊ ကျောက်တံတားမြို့နယ်၊ ရန်ကုန်မြို့။",
+        icon: "bx bx-map"
     },
     {
-        name: "Contact About Phone",
-        description: "2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam alias ad cumque exercitationem.",
-        icon: "bx bx-credit-card"
+        name: "Our Phone Numbers",
+        description: "No. 138, Seik Kan Tha Street, Kyauk Ta Da TownShip, Yangon.",
+        icon: "bx bxs-phone"
     },
     {
-        name: "Contact About Social",
+        name: "Connect Us with Social",
         description: "3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam alias ad cumque exercitationem.",
-        icon: "bx bx-diamond"
+        icon: "bx bxl-facebook"
     },
     {
-        name: "Contact About Gmail",
+        name: "Contact Us via Gmail",
         description: "4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam alias ad cumque exercitationem.",
-        icon: "bx bx-donate-heart"
+        icon: "bx bx-mail-send"
     }
 ]
 

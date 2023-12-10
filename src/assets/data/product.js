@@ -267,7 +267,7 @@ const products = [
         smallimage03: keyboardmouse_km160_3_small,
         imagealt: "SKT KM160 KeyBoard Mouse",
         categorySlug: "KeyBoardMouse",
-        colors: ["black"],
+        colors: ["black","white"],
         highlight: ["Wired", "UniCode font"],
         slug: "KeyBoardMouse-KM160",
         description: "KeyBoard Mouse KM160 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore dignissimos quisquam fugit in labore nam repellat veniam vero quia!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore dignissimos quisquam fugit in labore nam repellat veniam vero quia!"

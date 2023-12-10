@@ -1,18 +1,18 @@
 const colors = [
     {
-        display: "JR7 black",
+        display: "black",
         color: "black"
     },
     {
-        display: "JR7 white",
+        display: "white",
         color: "white"
     },
     {
-        display: "JR7 pink",
+        display: "pink",
         color: "pink"
     },
     {
-        display: "JR7 blue",
+        display: "blue",
         color: "blue"
     }
 ];
